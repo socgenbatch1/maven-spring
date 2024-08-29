@@ -1,1 +1,20 @@
+name: Trigger Python File
 
+on:
+  push:
+    branches:
+      - main  # Replace with your desired branch name
+  pull_request:
+    branches:
+      - main  # Replace with your desired branch name
+
+jobs:
+  run_python:
+    runs-on: ubuntu-latest  # Or any other supported runner
+    steps:
+      - uses: actions/checkout@v2
+      - name: Run python script
+      
+      - name: Install dependencies
+        run: |
+          python3 abc.py
