@@ -7,13 +7,13 @@ on:
     branches: [ master ]
 
 jobs:
-  build:
+  pythonexecution:
 
     runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v2
     
-    - name: Build with Maven
+    - name: Run Python Script
       run: |
         python3 abc.py
